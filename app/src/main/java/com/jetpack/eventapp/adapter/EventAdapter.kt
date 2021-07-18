@@ -30,11 +30,13 @@ class EventAdapter: BaseAdapter() {
         private val tv_name: TextView = itemView.findViewById(R.id.tv_name)
         private val tv_date: TextView = itemView.findViewById(R.id.tv_date)
         private val iv_avatar: ImageView = itemView.findViewById(R.id.iv_avatar)
+        private val tv_detail: TextView = itemView.findViewById(R.id.tv_detail)
 
         fun bind(user: Event){
-            tv_name.text = "${user.name} Birthday"
+            tv_name.text = user.name
             tv_date.text = user.birthdate
             iv_avatar.setImageResource(user.avatar)
+            tv_detail.text = user.detail
         }
 
 

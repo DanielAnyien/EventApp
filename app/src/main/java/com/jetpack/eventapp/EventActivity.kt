@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.ListView
+import android.widget.Toast
+import androidx.fragment.app.FragmentManager
+import com.google.android.gms.maps.MapFragment
 import com.jetpack.eventapp.adapter.EventAdapter
 import com.jetpack.eventapp.databinding.ActivityEventBinding
 import com.jetpack.eventapp.model.Event
@@ -23,13 +26,23 @@ class EventActivity : AppCompatActivity() {
         binding = ActivityEventBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val listView: ListView = findViewById(R.id.listview)
+        binding.btnBack.setOnClickListener {
+            val i = Intent(this@EventActivity,MainActivity::class.java)
+            startActivity(i)
+        }
+
+        binding.mapview.setOnClickListener {
+            supportFragmentManager.beginTransaction().add(R.id.frame, MapsFragment()).commit()
+        }
+
+        val listView = binding.listview
         val adapter = EventAdapter()
         listView.adapter = adapter
 
         val NamaUser = resources.getStringArray(R.array.nama1)
         val Tgl = resources.getStringArray(R.array.tgl_lahir1)
         val Avatar = resources.obtainTypedArray(R.array.avatar1)
+        val detail = resources.getStringArray(R.array.detail)
 
         val nama = intent.getStringExtra(EXTRA_NAME)
         val guest = intent.getStringExtra(EXTRA_GUEST)
@@ -39,7 +52,8 @@ class EventActivity : AppCompatActivity() {
             val user = Event(
                 Avatar.getResourceId(position, -1),
                 NamaUser[position],
-                Tgl[position]
+                Tgl[position],
+                detail[position]
             )
             users.add(user)
         }

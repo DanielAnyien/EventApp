@@ -7,5 +7,6 @@ import kotlinx.android.parcel.Parcelize
 data class Event (
     val avatar: Int,
     val name: String,
-    val birthdate: String
+    val birthdate: String,
+    val detail: String
 ): Parcelable

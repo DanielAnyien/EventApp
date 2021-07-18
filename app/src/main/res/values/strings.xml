@@ -27,9 +27,9 @@
     <string-array name="nama1">
         <item>Anwar</item>
         <item>Bob</item>
-        <item>Cyrros</item>
-        <item>Kamikaze</item>
-        <item>Xiao Wu</item>
+        <item>John</item>
+        <item>Belle</item>
+        <item>Cath</item>
     </string-array>
 
     <string-array name="tgl_lahir1">
@@ -41,10 +41,18 @@
     </string-array>
 
     <string-array name="avatar1">
-        <item>@drawable/ic_android_black_24dp</item>
-        <item>@drawable/ic_android_black_24dp</item>
-        <item>@drawable/ic_android_black_24dp</item>
-        <item>@drawable/ic_android_black_24dp</item>
-        <item>@drawable/ic_android_black_24dp</item>
+        <item>@drawable/img2</item>
+        <item>@drawable/img3</item>
+        <item>@drawable/img5</item>
+        <item>@drawable/img1</item>
+        <item>@drawable/img4</item>
+    </string-array>
+
+    <string-array name="detail">
+        <item>Fermentum elit curae; eu auctor nibh mattis consectetuer class libero tristique ante sociosqu. Erat vel class morbi ornare habitant mus proin sociis tincidunt eu gravida, porta eleifend tellus lectus fringilla.</item>
+        <item>Fermentum elit curae; eu auctor nibh mattis consectetuer class libero tristique ante sociosqu. Erat vel class morbi ornare habitant mus proin sociis tincidunt eu gravida, porta eleifend tellus lectus fringilla.</item>
+        <item>Fermentum elit curae; eu auctor nibh mattis consectetuer class libero tristique ante sociosqu. Erat vel class morbi ornare habitant mus proin sociis tincidunt eu gravida, porta eleifend tellus lectus fringilla.</item>
+        <item>Fermentum elit curae; eu auctor nibh mattis consectetuer class libero tristique ante sociosqu. Erat vel class morbi ornare habitant mus proin sociis tincidunt eu gravida, porta eleifend tellus lectus fringilla.</item>
+        <item>Fermentum elit curae; eu auctor nibh mattis consectetuer class libero tristique ante sociosqu. Erat vel class morbi ornare habitant mus proin sociis tincidunt eu gravida, porta eleifend tellus lectus fringilla.</item>
     </string-array>
 </resources>
